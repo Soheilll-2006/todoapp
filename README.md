@@ -1,53 +1,97 @@
-Todo App with FastAPI 🌟
-Welcome to the Todo App, a sleek and efficient task management application built with FastAPI, SQLAlchemy, and SQLite. This project helps you manage your tasks with user authentication, priority settings, and a clean API interface.
-✨ Features
+Todo App with FastAPI 🚀
+Welcome to the Ultimate Todo App – a blazing-fast, feature-packed task management tool built with FastAPI, SQLAlchemy, and SQLite. This project is your go-to solution for organizing tasks with style and efficiency! 🌟
+🌈 Features
 
-User registration and secure login
-Create, read, update, and delete (CRUD) todo items
-Set task priorities (0-6) and track completion status
-Health check endpoint for system monitoring
+Secure User Authentication: Register and log in with ease.
+CRUD Power: Create, Read, Update, and Delete todos like a pro.
+Priority Levels: Set priorities (0-6) to tackle tasks smartly.
+Completion Tracking: Mark tasks as done with a single click.
+Health Check: Monitor your app’s heartbeat with /health.
 
-🛠️ Prerequisites
+🛠️ Tech Stack
 
-Python 3.8 or higher
-Pip (for installing dependencies)
+FastAPI: For a lightning-fast API.
+SQLAlchemy: Robust database management.
+SQLite: Lightweight and reliable storage.
+Pydantic: Data validation done right.
 
-🚀 Installation
-Follow these steps to get the app running on your local machine:
+🚀 Getting Started
+Ready to roll? Follow these steps to launch your own Todo App:
 
-Clone the repository:
-git clone https://github.com/Soheilll-2006/todo_fastapi.git
-cd todo_fastapi
+Clone the Repo:
+git clone https://github.com/Soheilll-2006/todo-fastapi-new.git
+cd todo-fastapi-new
 
 
-Set up a virtual environment:
+Set Up Environment:
 python -m venv venv
 
 
-Activate the virtual environment:
+Activate it:
+Windows: venv\Scripts\activate
+Mac/Linux: source venv/bin/activate
 
-On Unix/Mac: source venv/bin/activate
-On Windows: venv\Scripts\activate
 
 
-Install dependencies:
+
+Install Dependencies:
 pip install -r requirements.txt
 
 
-Run the application:
+Run the App:
 uvicorn main:app --reload
 
-Visit http://127.0.0.1:8000 in your browser or API client!
+Open your browser or API client at http://127.0.0.1:8000! 🎉
 
 
 📋 API Endpoints
 
-POST /auth/: Register a new user
-POST /auth/token: Login and get token
-GET /todos/: List all todos
-GET /todos/{todo_id}: Get a specific todo
-POST /create_todo: Add a new todo
-PUT /update_todo/{todo_id}: Update a todo
-DELETE /delete_todo/{todo_id}: Delete a todo
-GET /health: Check app health
 
+
+Method
+Endpoint
+Description
+
+
+
+POST
+/auth/
+Register a new user
+
+
+POST
+/auth/token
+Login and get token
+
+
+GET
+/todos/
+List all todos
+
+
+POST
+/create_todo
+Add a new todo
+
+
+PUT
+/update_todo/{id}
+Update a todo
+
+
+DELETE
+/delete_todo/{id}
+Delete a todo
+
+
+GET
+/health
+Check app health
+
+
+🎨 Contributing
+Wanna make this app even cooler? Fork it, tweak it, and send a pull request! Check out our Contribution Guidelines (coming soon).
+📜 License
+This project is licensed under the MIT License – free to use, modify, and share! (Add your own license file if needed.)
+🙌 Acknowledgments
+Thanks to the open-source community and the awesome tools that power this project! 💪
